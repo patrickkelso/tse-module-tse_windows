@@ -28,6 +28,4 @@ class tse_windows {
     description  => "Windows RDP Inbound Access, enabled by Puppet in $module_name",
   }
 
-
-
 }
