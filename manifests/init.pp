@@ -13,7 +13,7 @@ class tse_windows {
   if $::operatingsystemmajrelease == '2012 R2' {
     registry::value { 'DisableNLA':
       key   => 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp',
-      value => UserAuthentication,
+      value => 'UserAuthentication',
       type  => 'dword',
       data  => '0',
     }
