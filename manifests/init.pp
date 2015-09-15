@@ -1,7 +1,7 @@
 # this is a profile to setup our base windows requirements
 class tse_windows {
 
-  include chocolately
+  include chocolatey
 
   user { 'tseadmin':
     ensure   => present,
