@@ -1,6 +1,8 @@
 # this is a profile to setup our base windows requirements
 class tse_windows {
 
+  include chocolately
+
   user { 'tseadmin':
     ensure   => present,
     comment  => 'Created for TSE access to these machines',
